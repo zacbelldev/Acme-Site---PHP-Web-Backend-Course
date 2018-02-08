@@ -1,0 +1,484 @@
+/* The following code is for index.php */
+/*Author: ZAC BELL*/
+/*Mobile First Approach*/
+
+/*Color Scheme:
+#000000 (black)
+#0000ee (blue)
+#808080 (grey)
+#990033 (maroon)
+#de2226 (red))
+#ffffff (white)*/
+
+/*BRO ROBERTSON CODE:*/
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+/*BRO ROBERTSON CODE:*/
+
+textarea {
+    width:200px;
+    height:50px;
+}
+
+label {
+    display: block;
+}
+
+#price {
+    color: #de2226;
+    font-size:larger;
+}
+
+.detailContainer {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.detailContainer h1 {
+    width:100%;
+    margin-bottom: 20px;
+}
+
+#detailChildImage {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#detailChildImage img {
+    max-width:300px;
+    max-height:200px;
+}
+
+#detailChildDesc {
+    max-width:300px;
+    padding:20px;
+}
+
+.detailChildThumb img {
+    border: 2px solid #808080;
+    margin:20px;
+    max-width:100px;
+    max-height:70px;
+}
+
+.detailChildThumb {
+    list-style: none;
+}
+
+.detailChildForm {
+    width: 100%;
+}
+
+.detailChildReviews {
+    padding:10px;
+    width: 100%;
+    background-color: #f7f096;
+}
+
+.detailChildReviews p {
+    margin-bottom: 10px;
+}
+
+.review {
+    margin-top:5px;
+    padding:5px;
+    background-color: white;
+}
+
+.detailChildAdminReviews {
+    margin-top: 15px;
+}
+
+.detailChildAdminReviews ul{
+    margin-top: 5px;
+    padding-left:20px;
+    line-height: 150%;
+}
+
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    padding: 0.25rem;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+tbody tr:nth-child(odd) {
+    background: #eee;
+}
+
+.leftMargin {
+    margin-left: 30px;
+    margin-top:5px;
+}
+
+#welcome {
+    font-size: smaller;
+    color: #0000ee;
+    margin: 0 10px;
+}
+
+/*input:invalid [required], input:focus:invalid {
+    border: 2px red solid;
+    background-image: url(/images/invalid.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+input:valid [required] {
+    border: 2px green solid;
+    background-image: url(/images/valid.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+}*/
+
+fieldset{
+    border:0;
+    padding:20px;
+}
+#prod-mgmt-ul{
+    margin:5px 20px;
+}
+#article_nav_bar, #article_footer,
+.menu-right,#main_section_testimonial_recipes,
+#main_section_testimonial_reviews {
+    padding:5%;
+}
+a {
+    text-decoration: none;
+}
+.submitButton, .registerButton {
+    color:white;
+    background-color:#de2226;
+    margin:5px;
+    padding:5px;
+    min-width: 100px;
+}
+#body {
+    width:100%;
+    height:100%;
+    background-image: url("/acme/images/background.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+#body_aside_left, #body_aside_right {
+    display: none;
+}
+#body_article {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    order: 2;
+    flex-grow: 2;
+}
+#article_header {
+    height:125px;
+    background-color: white;
+    order: 1;
+}
+#article_header_nav ul li {
+    display:inline;
+    list-style-type: none;
+}
+#logoImage {
+    padding:10px;
+    height:60%;
+}
+#article_nav_bar {
+    margin:0;
+    background-color: #de2226;
+    order: 2;
+}
+#article_nav_bar ul {
+    text-align: center;
+}
+#article_nav_bar li {
+    display:inline;
+}
+#article_nav_bar li a{
+    border-radius: 5px 5px 0 0;
+    color:white;
+    display: inline-block;
+    width:80px;
+    padding: 10px;
+    text-align: center;
+}
+#home a[title~=home],
+#anvil a[title~=anvil],
+#cannon a[title~=cannon],
+#protection a[title~=protection],
+#rockets a[title~=rockets],
+#traps a[title~=traps]
+{
+    background-color: white;
+    color:red;
+}
+#accountImage, #helpImage{
+    padding-left: 15px;
+    height:14px;
+    float: left;
+}
+.menu-right {
+    padding:0;
+    padding-left: 5px;
+    min-width: 10%;
+    color:black;
+    float: left;
+}
+#article_main {
+    padding: 0 2% 0 2%;
+    background-color: white;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    order: 3;
+}
+#article_footer {
+    background-color: white;
+    order: 4;
+    text-align: center;
+}
+#article_footer p {
+    font-size: 0.8em;
+}
+#article_footer ul {
+    padding:10px 0;
+}
+#article_footer li {
+    text-decoration: underline;
+    display:inline;
+}
+#article_footer li a {
+    width: 10%;
+}
+#main_section_heading {
+    background-color: white;
+    order: 1;
+}
+#main_section_heading_text {
+    text-align: center;
+    padding-top: 5px;
+    margin:0;
+    font-size: 1.5em; 
+    font-family: "Comic Sans MS";
+}
+#main_section_hero {
+    margin: 15px 0;
+    background-color: white;
+    order: 2;
+}
+#dinnerRocketImage{
+    width:100%;
+}
+#actionbtn{
+    padding-top:10px;
+    width:200px;
+}
+#heroText {
+    color:#990033;
+    list-style-type: none;
+    font-family:"Comic Sans MS";
+    text-align: center;
+}
+#main_section_testimonial {
+    display:flex;
+    flex-wrap: wrap;
+    margin:0;
+    order: 3;
+}
+#main_section_testimonial_recipes {
+    background-color: white;
+    margin:0;
+    order: 1;
+    flex-grow: 1;
+}
+#main_section_testimonial_recipes h1 {
+    width:100%;
+    margin:0;
+    font-size: 1em; 
+    font-family: "Comic Sans MS";
+    text-align: center;
+    padding-bottom: 15px;
+}
+#recipeGridContainer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+}
+.fourRecipeBlocks {
+    width: 100px;
+    height:120px;
+    text-decoration: underline;
+    text-align: center;
+}
+figcaption {
+    font-size:80%;
+}
+#main_section_testimonial_reviews {
+    background-color: white;
+    order: 2;
+    flex-grow: 2;
+}
+#main_section_testimonial_reviews h1 {
+    margin:0;
+    font-size: 1em; 
+    font-family: "Comic Sans MS";
+    text-align: center;
+}
+#main_section_testimonial_reviews ul {
+    padding-left: 10px;
+    margin:0;
+}
+
+@media screen and (min-width: 512px){
+
+
+    /*BRO ROBERTSON CODE:*/
+    #prod-display{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #prod-display li{
+        margin-bottom: .5em;
+        border: 1px #ccc solid;
+        list-style-type: none;
+        flex: 1 1 auto;
+    }
+    #prod-display li img{
+        width: 100%;
+        height: 200px;
+    }
+    /*BRO ROBERTSON CODE:*/
+
+
+    #detailChildImage{
+        width:50%;
+    }
+    
+    #detailChildImage img {
+        max-width:500px;
+        max-height:300px;
+    }
+
+    #article_header_nav {
+        display: block;
+        padding: 20px;
+        float:right;
+    }
+    #article_nav_bar {
+        padding:5px 15px 0px 15px;
+    }
+    #article_nav_bar ul {
+        text-align: left;
+    }
+    #article_nav_bar li a{
+        padding-bottom: 18px;
+        border-radius: 10px 10px 0 0;
+    }
+    #main_section_testimonial {
+        height:300px;
+        width:100%;
+    }
+    #main_section_heading_text, #main_section_testimonial_recipes h1,
+    #main_section_testimonial_recipes {
+        text-align: left;
+    }
+    #main_section_testimonial_recipes {
+        max-width:200px;
+    }
+    #main_section_testimonial_reviews {
+        margin-left: 30px;
+        max-width:calc(100% - 230px);
+    }
+    #main_section_testimonial_reviews h1 {
+        text-align: left;
+    }
+    #main_section_testimonial_recipes, #main_section_testimonial_reviews {
+        padding:0;
+        padding-top:15px;
+        padding-bottom:15px;
+        display: inline-block;
+    }
+    #main_section_hero {
+        position:relative;
+    }
+    #main_section_hero span {  
+        display:inline-block;
+    }
+    #main_section_hero img {
+        position:relative;
+    }
+    #heroText {  
+        width:250px;
+        text-align:left;
+        position: absolute;
+        top:40%;
+        left:75%;  
+        transform: translate(-50%, -50%);
+    }
+    #actionbtn{
+        padding-top:10px;
+        width:230px;
+    }
+}
+
+@media screen and (min-width: 730px){
+
+    /*BRO ROBERTSON CODE:*/
+    #prod-display{
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    #prod-display li{
+        max-width: 200px;
+        flex: 1 0 auto;
+        text-align: center;
+        max-height: 400px; }
+    /*BRO ROBERTSON CODE:*/
+
+    textarea {
+        width:300px;
+        height:100px;
+    }
+
+
+
+    #body_aside_left, #body_aside_right {
+        display: block;
+    }
+    #body_aside_left {
+        order: 1;
+        flex-grow: 1;
+    }
+    #body_article {
+        width:300px;
+    }
+    #body_aside_right {
+        order: 3;
+        flex-grow: 1;
+    }
+    #logoImage {
+        height:80%;
+    }
+    #article_header {
+        height:100px;
+    }
+}

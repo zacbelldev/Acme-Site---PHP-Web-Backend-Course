@@ -1,0 +1,42 @@
+--------------------------------------------------------------------------------
+1.
+
+INSERT INTO `clients`(`clientFirstname`, `clientLastname`, `clientEmail`, 
+`clientPassword`, `clientLevel`, `comments`) VALUES ("Tony","Stark",
+"tony@starkent.com","Iam1ronM@n",NULL,"I am the real Ironman");
+
+--------------------------------------------------------------------------------
+2.
+
+UPDATE `clients` SET `clientLevel`=3 WHERE `clientId` = 1;
+
+--------------------------------------------------------------------------------
+3.
+
+UPDATE `inventory` set invName = replace(invName, 'Nylon', 'Climbing');
+UPDATE `inventory` set invDescription = replace(invDescription, 'nylon', 'climbing');
+UPDATE `inventory` set invStyle = replace(invStyle, 'nylon', 'climbing');
+
+
+OR
+
+UPDATE `inventory` set 
+    invName = replace(invName, 'Nylon', 'Climbing'), 
+    invDescription = replace(invDescription, 'nylon', 'climbing'),
+    invStyle = replace(invStyle, 'Nylon', 'Climbing');
+
+--------------------------------------------------------------------------------
+4.
+
+SELECT i.invName as "Inventory Name" , c.categoryName as "Category Name"
+FROM inventory i
+INNER JOIN categories c
+ON i.categoryId = c.categoryId 
+WHERE c.categoryName = "Misc";
+
+--------------------------------------------------------------------------------
+5.
+
+DELETE FROM `inventory` WHERE `invName` = "Koenigsegg CCX";
+
+--------------------------------------------------------------------------------
